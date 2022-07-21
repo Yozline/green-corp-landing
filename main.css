@@ -9,6 +9,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 1;
 }
 
 .about h1 {
@@ -64,11 +68,26 @@ button:hover{
 
 .about__image {
     width: 500px;
-  }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.about__images, .about__info {
+    animation: 2s ease 1;
+}
    
 .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite;
+    position: absolute;
 }
 
 .about {
@@ -187,4 +206,75 @@ footer {
     font-size: 16px;
     opacity: 0.7;
     margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 115px 20px;
+    }
+  
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+  
+    .about__image {
+        width: 280px;
+    }
+  
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+ }
+  
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px;
+    }
+    header a {
+        margin-right: 10px;
+    }
+    .header__logo {
+        height: 20px;
+    }
+    .about__image {
+        width: 280px;
+    }
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+    .about {
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+    }
+    .about h1 {
+        font-size: 36px; 
+        line-height: 40px
+    }
+    .form h1 {
+        font-size: 36px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .about h1, .form__container h1 {
+        font-size: 36px; 
+        line-height: 40px
+    }
+
+    .form, footer {
+        padding-top: 50px; 
+        padding-bottom: 50px;
+    }
+    footer {
+        padding: 50px 10px;
+    }
+
 }
