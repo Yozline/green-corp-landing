@@ -61,12 +61,6 @@ button {
     padding: 15px;
 }
 
-button:hover{
-    background-color: #f6980c;
-    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-    transition: background-color 0.3s ease-in;
-}
-
 .about__image {
     width: 500px;
 }
@@ -349,13 +343,18 @@ footer {
     background-color: #107b1c;
     margin-top: 20px;
     font-size: 18px;
-    font-weight: 600;
     padding: 15px 30px;
-
 }
+
 .promo__right button i {
     font-size: 15px;
     margin-left: 5px;
+}
+
+button:hover{
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
 }
 
 
