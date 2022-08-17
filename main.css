@@ -306,7 +306,7 @@ footer {
 }
 
 .promo__image {
-    background: url('/img/promo.jpg');
+    background: url('img/promo.jpg') no-repeat;
     background-position: center;   
     background-size: cover;
     width: 50%;
