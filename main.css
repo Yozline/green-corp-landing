@@ -15,6 +15,13 @@ header {
     z-index: 1;
 }
 
+.orb-canvas {
+    position: absolute;
+    height: 100%;
+    top:0;
+    right: 0;
+}
+
 .about h1 {
     font-size: 70px;
     line-height: 76px;
@@ -86,6 +93,7 @@ button {
 }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
